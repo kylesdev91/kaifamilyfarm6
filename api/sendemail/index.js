@@ -25,9 +25,9 @@ module.exports = async function (context, req) {
     // from: 'kylehernandez12@outlook.com',
     // to: 'eands9@yahoo.com',
     // from: 'kaifamilyfarm@yahoo.com',
-    // to: 'kaifamilyfarm@yahoo.com',
+    to: 'kaifamilyfarm@yahoo.com',
     // from: 'kylehernandez12@outlook.com',
-    to: 'erichernandez134@outlook.com',
+    // to: 'erichernandez134@outlook.com',
     subject:
       'Order From ' + req.body.emailAddress + ' - ' + req.body.emailSubject,
     text: req.body.emailBody,
