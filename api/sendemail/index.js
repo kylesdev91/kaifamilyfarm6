@@ -56,8 +56,8 @@ module.exports = async function (context, req) {
       console.log('Sent: ' + info.response);
       smsClient.send({
         from: "+18444021959",
-        to: ["+14699106366", "+14695250450"],
-        // to: ["+14699106366", "+14057610896"],
+        // to: ["+14699106366", "+14695250450"],
+        to: ["+14699106366", "+14057610896"],
         message: "Order from  " + req.body.emailAddress + "... " + req.body.orderTotal
     });
     }
