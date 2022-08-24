@@ -25,11 +25,11 @@ module.exports = async function (context, req) {
 
   const mailOptions = {
     from: 'kaifamilyfarm123@outlook.com',
-    to: 'kaifamilyfarm123@outlook.com',
+    // to: 'kaifamilyfarm123@outlook.com',
     // from: 'kylehernandez12@outlook.com',
     // to: 'eands9@yahoo.com',
     // from: 'kaifamilyfarm@yahoo.com',
-    // to: 'kaifamilyfarm@yahoo.com',
+    to: 'kaifamilyfarm@yahoo.com',
     // from: 'kylehernandez12@outlook.com',
     // to: 'erichernandez134@outlook.com',
     subject:
@@ -49,8 +49,8 @@ module.exports = async function (context, req) {
     // console.log('Message sent: %s', response);
     smsClient.send({
       from: "+18444021959",
-      to: ["+14699106366", "+14695250450"],
-      // to: ["+14699106366", "+14057610896"],
+      // to: ["+14699106366", "+14695250450"],
+      to: ["+14699106366",  "+14695250450", "+14057610896"],
       message: "Order from  " + req.body.emailAddress + "... " + req.body.orderTotal
     });
   } catch (error) {
@@ -58,8 +58,8 @@ module.exports = async function (context, req) {
 
     smsClient.send({
         from: "+18444021959",
-        to: ["+14699106366", "+14695250450"],
-        // to: ["+14699106366", "+14057610896"],
+        // to: ["+14699106366", "+14695250450"],
+        to: ["+14699106366",  "+14695250450", "+14057610896"],
         message: "Error in submission..."
     });
     context.res = {
